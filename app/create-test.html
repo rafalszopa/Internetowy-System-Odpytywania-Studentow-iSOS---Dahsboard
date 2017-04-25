@@ -97,8 +97,65 @@
                 </header>
                 <div class="content">
                     <!--Kontent-->
-                    {% block content %}
-                    {% endblock %}
+                    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Utwórz test</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nazwa kursu</label>
+                            <input id="name" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Wybierz kurs z listy</label>
+                            <select id="course">
+                                <option value="">Kurs 1</option>
+                                <option value="">Kurs 2</option>
+                                <option value="">Kurs 3</option>
+                                <option value="">Kurs 4</option>
+                                <option value="">Kurs 5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question">Wybierz pytania z listy</label>
+                            <select id="question">
+                                <option value="">Zestaw pytań 1</option>
+                                <option value="">Zestaw pytań 2</option>
+                                <option value="">Zestaw pytań 3</option>
+                                <option value="">Zestaw pytań 4</option>
+                                <option value="">Zestaw pytań 5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input id="c1" type="checkbox">
+                            <label for="c1">Bez podziału na grupy</label>
+                        </div>
+                        <div class="form-group">
+                            <input id="c2" type="checkbox">
+                            <label for="c2">Z podziałem na grupy</label>
+                        </div>
+                        <div class="form-group clockpicker">
+                            <input type="text" class="form-control" value="09:30">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>
+                        <div class="form-group clockpicker">
+                            <div id="datepicker"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    <!--    <h2>Content</h2>
+    <p>W przeciwieństwie do rozpowszechnionych opinii, Lorem Ipsum nie jest tylko przypadkowym tekstem. Ma ono korzenie w klasycznej łacińskiej literaturze z 45 roku przed Chrystusem, czyli ponad 2000 lat temu! Richard McClintock, wykładowca łaciny na uniwersytecie Hampden-Sydney w Virginii, przyjrzał się uważniej jednemu z najbardziej niejasnych słów w Lorem Ipsum – consectetur – i po wielu poszukiwaniach odnalazł niezaprzeczalne źródło: Lorem Ipsum pochodzi z fragmentów (1.10.32 i 1.10.33) „de Finibus Bonorum et Malorum”, czyli „O granicy dobra i zła”, napisanej właśnie w 45 p.n.e. przez Cycerona. Jest to bardzo popularna w czasach renesansu rozprawa na temat etyki. Pierwszy wiersz Lorem Ipsum, „Lorem ipsum dolor sit amet...” pochodzi właśnie z sekcji 1.10.32.
+
+Standardowy blok Lorem Ipsum, używany od XV wieku, jest odtworzony niżej dla zainteresowanych. Fragmenty 1.10.32 i 1.10.33 z „de Finibus Bonorum et Malorum” Cycerona, są odtworzone w dokładnej, oryginalnej formie, wraz z angielskimi tłumaczeniami H. Rackhama z 1914 roku.</p>-->
+    
+</div>
+
                 </div>
                 <footer class="footer">
                     <!--Footer-->

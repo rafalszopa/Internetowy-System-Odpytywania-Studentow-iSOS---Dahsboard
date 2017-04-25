@@ -1,8 +1,14 @@
 $(document).ready(function() {
 
-	$('.nav-icon').click(function(){
-		$(this).toggleClass('open');
-        $('body').toggleClass('opened-menu');
+	$('.hamburger-icon').click(function(){
+		$(this).toggleClass('opened');
+        $('.wrapper').toggleClass('opened-menu');
+	});
+    $('.menu-multi-level').click(function(){
+        $(this).toggleClass('opened');
 	});
 
+	$('.clockpicker').clockpicker();
+
+	$( "#datepicker" ).datepicker();
 });
