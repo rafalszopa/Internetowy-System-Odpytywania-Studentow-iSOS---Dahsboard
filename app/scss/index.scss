@@ -1,6 +1,6 @@
 body {
     font-family: 'Maven Pro', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -141,33 +141,18 @@ div {
         height: 3px;
         width: 100%;
         border-radius: 2px;
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        -o-transform: rotate(0);
-        transform: rotate(0);
         -webkit-transition: .2s ease-in-out;
         -moz-transition: .2s ease-in-out;
         -o-transition: .2s ease-in-out;
         transition: .2s ease-in-out;
     }
 
-    > span:nth-child(1) {
-        top: 0px;
+    > span:nth-child(1), span:nth-child(4) {
+        opacity: 0;
     }
 
     > span:nth-child(2), span:nth-child(3) {
         top: 8px;
-    }
-
-    > span:nth-child(4) {
-        top: 16px;
-    }
-}
-
-.hamburger-icon.opened {
-    > span:nth-child(1), > span:nth-child(4) {
-        opacity: 0;
-        width: 0%;
     }
 
     > span:nth-child(2) {
@@ -182,6 +167,28 @@ div {
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
+    }
+}
+
+.hamburger-icon.opened {
+
+    > span {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    > span:nth-child(1) {
+        top: 0px;
+        opacity: 1;
+    }
+
+
+
+    > span:nth-child(4) {
+        top: 16px;
+        opacity: 1;
     }
 }
 
@@ -212,6 +219,10 @@ form {
     min-height: 70px;
     background: white;
     line-height: 70px;
+}
+
+.container-fluid {
+    max-width: 1200px;
 }
 
 // .container-fluid, .container {
