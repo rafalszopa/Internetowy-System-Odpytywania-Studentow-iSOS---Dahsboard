@@ -8,7 +8,5 @@ $(document).ready(function() {
         $(this).toggleClass('opened');
 	});
 
-	$('.clockpicker').clockpicker();
-
-	$( "#datepicker" ).datepicker();
+	$('#datetimepicker1').datetimepicker();
 });

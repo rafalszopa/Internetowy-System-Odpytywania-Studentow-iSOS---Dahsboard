@@ -58,6 +58,9 @@ div {
     margin-top: 13px;
     color: #444444; }
 
+.btn-super {
+  color: white; }
+
 .main {
   margin-left: 0;
   -webkit-transition: .2s ease-in-out;
