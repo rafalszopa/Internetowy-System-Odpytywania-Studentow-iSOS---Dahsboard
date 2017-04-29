@@ -12,7 +12,7 @@ div {
 }
 
 .wrapper {
-    background: #f7f7f6;
+    // background: #f7f7f6;
     min-height: 100vh;
 
     &.opened-menu {
@@ -82,7 +82,7 @@ div {
 
             .nav-item-icon {
                 width: 30px;
-                color: #b1465d;
+                color: #3A3795;
             }
 
             .nav-open-icon {
@@ -225,9 +225,9 @@ div {
 
 // Forms
 form {
-    // label {
-    //     display: block;
-    // }
+    label {
+        font-weight: 500;
+    }
     input {
         // display: block;
     }
@@ -243,9 +243,10 @@ form {
 
 
 .footer {
-    min-height: 70px;
-    background: white;
-    line-height: 70px;
+    padding-left: 25px;
+    min-height: 60px;
+    background: #f7f7f6;
+    line-height: 60px;
 }
 
 .container-fluid {

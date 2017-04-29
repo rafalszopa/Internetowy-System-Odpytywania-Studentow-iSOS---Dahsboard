@@ -9,7 +9,6 @@ div {
   box-sizing: border-box !important; }
 
 .wrapper {
-  background: #f7f7f6;
   min-height: 100vh; }
   .wrapper.opened-menu .main {
     margin-left: 250px; }
@@ -52,7 +51,7 @@ div {
       background: #0e0e0e; }
   .menu .menu-list .menu-item .nav-item-icon {
     width: 30px;
-    color: #b1465d; }
+    color: #3A3795; }
   .menu .menu-list .menu-item .nav-open-icon {
     float: right;
     margin-top: 13px;
@@ -151,14 +150,18 @@ div {
     position: relative;
     z-index: 1; }
 
+form label {
+  font-weight: 500; }
+
 form .form-group {
   padding: 30px;
   border-bottom: 1px solid #e2e2e2; }
 
 .footer {
-  min-height: 70px;
-  background: white;
-  line-height: 70px; }
+  padding-left: 25px;
+  min-height: 60px;
+  background: #f7f7f6;
+  line-height: 60px; }
 
 .container-fluid {
   max-width: 1200px; }
