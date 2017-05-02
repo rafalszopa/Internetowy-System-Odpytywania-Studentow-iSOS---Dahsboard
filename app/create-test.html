@@ -31,7 +31,7 @@
                     </li>
                     <li class="menu-item menu-multi-level">
                         <a href="#">
-                            <i class="fa fa-file-o nav-item-icon" aria-hidden="true"></i>
+                            <i class="fa fa-file-text nav-item-icon" aria-hidden="true"></i>
                             <span>Testy</span>
                             <i class="fa fa-angle-down nav-open-icon" aria-hidden="true"></i>
                         </a>
@@ -61,7 +61,7 @@
                     </li>
                     <li class="menu-item menu-multi-level">
                         <a href="#">
-                            <i class="fa fa-circle-o nav-item-icon" aria-hidden="true"></i>
+                            <i class="fa fa-graduation-cap nav-item-icon" aria-hidden="true"></i>
                             <span>Kursy</span>
                             <i class="fa fa-angle-down nav-open-icon" aria-hidden="true"></i>
                         </a>
@@ -74,11 +74,35 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="menu-item menu-multi-level">
+                        <a href="#">
+                            <i class="fa fa-adjust nav-item-icon" aria-hidden="true"></i>
+                            <span>Reguły oceniania</span>
+                            <i class="fa fa-angle-down nav-open-icon" aria-hidden="true"></i>
+                        </a>
+                        <ul class="submenu-list">
+                            <li class="menu-item">
+                                <a href="#">Utwórz regułę</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Przeglądaj reguły</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="menu-item">
                         <a href="#">
                             <i class="fa fa-line-chart nav-item-icon" aria-hidden="true"></i>
                             <span>Statystyki</span>
                         </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <i class="fa fa-sign-out nav-item-icon" aria-hidden="true"></i>
+                            <span>Wyloguj się</span>
+                        </a>
+                        <div>
+                            <p>Copyright © Internetowy System Odpytywania Studentów</p>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -104,10 +128,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div>
-                        <a href="#">Strona główna</a> /
+                    <div class="breadcrump-link">
+                        <a href="#">Strona główna</a> <span>/</span>
                     </div>
-                    <h1>Kreator testu</h1>
+                    <h1 class="breadcrump-title">Kreator testu</h1>
                 </div>
             </div>
         </div>
@@ -118,14 +142,17 @@
             <div class="col-md-12">
                     <form class="form-horizontal">
                         <div class="form-group">
-                            <label class="col-sm-2" for="name">Nazwa kursu</label>
-                            <div class="col-sm-10">
+                            <label class="col-sm-3" for="name">Wprowadź nazwę kursu</label>
+                            <div class="col-sm-8">
                                 <input class="form-control" id="name" type="text">
+                            </div>
+                            <div class="col-sm-1">
+                                <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2" for="course">Wybierz kurs z listy</label>
-                            <div class="col-sm-10">
+                            <label class="col-sm-3" for="course">Wybierz kurs z listy</label>
+                            <div class="col-sm-8">
                                 <select class="form-control" id="course">
                                     <option value="">Kurs 1</option>
                                     <option value="">Kurs 2</option>
@@ -134,10 +161,13 @@
                                     <option value="">Kurs 5</option>
                                 </select>
                             </div>
+                            <div class="col-sm-1">
+                                <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2" for="question">Wybierz pytania z listy</label>
-                            <div class="col-sm-10">
+                            <label class="col-sm-3" for="question">Wybierz pytania z listy</label>
+                            <div class="col-sm-8">
                                 <select class="form-control" id="question">
                                     <option value="">Zestaw pytań 1</option>
                                     <option value="">Zestaw pytań 2</option>
@@ -146,14 +176,15 @@
                                     <option value="">Zestaw pytań 5</option>
                                 </select>
                             </div>
+                            <div class="col-sm-1">
+                                <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input id="c1" type="checkbox">
-                            <label for="c1">Bez podziału na grupy</label>
+                        <div class="radio">
+                            <label for="c1"><input id="c1" type="radio"> Bez podziału na grupy</label>
                         </div>
-                        <div class="form-group">
-                            <input id="c2" type="checkbox">
-                            <label for="c2">Z podziałem na grupy</label>
+                        <div class="radio">
+                            <label for="c2"><input id="c2" type="radio"> Z podziałem na grupy</label>
                         </div>
 
                         <div class="form-group">
@@ -162,7 +193,7 @@
                                 <div class='input-group date' id='datetimepicker1'>
                                     <input type='text' class="form-control" />
                                         <span class="input-group-addon">
-                                        <span class="glyphicon glyphicon-calendar"></span>
+                                        <span class="fa fa-calendar"></span>
                                     </span>
                                 </div>
                             </div>
