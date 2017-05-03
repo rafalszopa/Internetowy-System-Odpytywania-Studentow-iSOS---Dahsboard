@@ -19,11 +19,19 @@ div {
 
         .main {
             margin-left: 250px;
+            padding-bottom: 50px;
         }
         .menu {
             transform: translate(0, 0);
         }
     }
+}
+
+.btn {
+    padding: 10px 30px;
+    display: inline-block;
+    background: #0aca0a;
+    color: white;
 }
 
 .menu {
@@ -42,6 +50,15 @@ div {
 
     .menu-list {
         li.menu-item {
+
+            position: relative;
+
+            .badge {
+                position: absolute;
+                right: 30;
+                font-size: 12px;
+            }
+
             &.menu-multi-level {
                 > .submenu-list {
                     display: none;
@@ -256,6 +273,10 @@ form {
             right: 15px;
             bottom: 10px;
         }
+    }
+
+    & > div.form-section:last-child {
+        border-bottom: 0px;
     }
 
     .form-section {

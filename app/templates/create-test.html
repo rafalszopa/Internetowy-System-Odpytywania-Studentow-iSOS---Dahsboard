@@ -43,7 +43,25 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="question">Wybierz pytania z listy</label>
+                                <label for="question">Reguła oceniania</label>
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                <select class="form-control" id="question">
+                                    <option value="">Reguła prosta</option>
+                                    <option value="">Reguła bardzo prosta</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Pytania</h3>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 40px;">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="question">Wybierz zestaw pytań z listy</label>
                                 <i class="fa fa-question-circle" aria-hidden="true"></i>
                                 <select class="form-control" id="question">
                                     <option value="">Zestaw pytań 1</option>
@@ -53,12 +71,6 @@
                                     <option value="">Zestaw pytań 5</option>
                                 </select>
                             </div>
-                        </div>
-                    </div>
-                    <div class="form-section">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Pytania</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -122,7 +134,7 @@
                     </div>
                     </div>
 
-                    <div class="form-section">
+                    <div class="form-section" style="border-bottom: none;">
                         <div class="row">
                         <div class="col-md-12">
                             <h3>Termin i lokalizacja</h3>
@@ -146,7 +158,9 @@
                                 <div class="form-group">
                                     <label for="name">Określ czas trwania testu</label>
                                     <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                    <input class="form-control" id="name" type="number">
+                                    <input style="max-width: 200px; display:inline-block" class="form-control" id="name" type="number">
+                                    <span style="    margin-left: 15px;
+    color: #716565;" >minut</span>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -159,61 +173,13 @@
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-md-12" style="text-align:right;">
+                            <a class="btn" href="#">Utwórz test</a>
+                        </div>
                     </div>
                 </form>
             </div>
-
-
-
-                    <!--<form>
-                        <div class="form-group col-md-4">
-                            <label for="name">Wprowadź nazwę kursu</label>
-                            <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
-                            <input class="form-control" id="name" type="text">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="course">Wybierz kurs z listy</label>
-                            <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
-                                <select class="form-control" id="course">
-                                    <option value="">Kurs 1</option>
-                                    <option value="">Kurs 2</option>
-                                    <option value="">Kurs 3</option>
-                                    <option value="">Kurs 4</option>
-                                    <option value="">Kurs 5</option>
-                                </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="question">Wybierz pytania z listy</label>
-                            <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
-                                <select class="form-control" id="question">
-                                    <option value="">Zestaw pytań 1</option>
-                                    <option value="">Zestaw pytań 2</option>
-                                    <option value="">Zestaw pytań 3</option>
-                                    <option value="">Zestaw pytań 4</option>
-                                    <option value="">Zestaw pytań 5</option>
-                                </select>
-                        </div>
-
-                        <div class="form-group col-md-12">
-                        <div class="radio">
-                            <label for="c1"><input id="c1" type="radio"> Bez podziału na grupy</label>
-                        </div>
-                        </div>
-                        <div class="radio">
-                            <label for="c2"><input id="c2" type="radio"> Z podziałem na grupy</label>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-sm-2" for="question">Określ termin testu</label>
-                            <div class="col-sm-10">
-                                <div class='input-group date' id='datetimepicker1'>
-                                    <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
-                                        <span class="fa fa-calendar"></span>
-                                    </span>
-                                </div>
-                            </div>
-                    </form>-->
                 </div>
             </div>
         </div>

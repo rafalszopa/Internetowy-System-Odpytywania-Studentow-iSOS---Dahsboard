@@ -11,9 +11,16 @@ div {
 .wrapper {
   min-height: 100vh; }
   .wrapper.opened-menu .main {
-    margin-left: 250px; }
+    margin-left: 250px;
+    padding-bottom: 50px; }
   .wrapper.opened-menu .menu {
     transform: translate(0, 0); }
+
+.btn {
+  padding: 10px 30px;
+  display: inline-block;
+  background: #0aca0a;
+  color: white; }
 
 .menu {
   background: #060606;
@@ -28,34 +35,40 @@ div {
   -moz-transition: .2s ease-in-out;
   -o-transition: .2s ease-in-out;
   transition: .2s ease-in-out; }
-  .menu .menu-list li.menu-item.menu-multi-level > .submenu-list {
-    display: none; }
-    .menu .menu-list li.menu-item.menu-multi-level > .submenu-list .menu-item a {
-      color: #656565;
-      padding-left: 64px; }
-      .menu .menu-list li.menu-item.menu-multi-level > .submenu-list .menu-item a:hover {
-        text-decoration: underline;
-        background: none; }
-  .menu .menu-list li.menu-item.menu-multi-level.opened > .submenu-list {
-    display: block; }
-  .menu .menu-list li.menu-item.menu-multi-level.opened .nav-open-icon {
-    transform: rotate(180deg); }
-  .menu .menu-list li.menu-item a {
-    display: block;
-    padding: 5px 30px;
-    font-size: 15px;
-    color: #909090;
-    text-decoration: none;
-    border-bottom: 1px solid #0e0e0e; }
-    .menu .menu-list li.menu-item a:hover {
-      background: #0e0e0e; }
-  .menu .menu-list li.menu-item .nav-item-icon {
-    width: 30px;
-    color: #3A3795; }
-  .menu .menu-list li.menu-item .nav-open-icon {
-    float: right;
-    margin-top: 13px;
-    color: #444444; }
+  .menu .menu-list li.menu-item {
+    position: relative; }
+    .menu .menu-list li.menu-item .badge {
+      position: absolute;
+      right: 30;
+      font-size: 12px; }
+    .menu .menu-list li.menu-item.menu-multi-level > .submenu-list {
+      display: none; }
+      .menu .menu-list li.menu-item.menu-multi-level > .submenu-list .menu-item a {
+        color: #656565;
+        padding-left: 64px; }
+        .menu .menu-list li.menu-item.menu-multi-level > .submenu-list .menu-item a:hover {
+          text-decoration: underline;
+          background: none; }
+    .menu .menu-list li.menu-item.menu-multi-level.opened > .submenu-list {
+      display: block; }
+    .menu .menu-list li.menu-item.menu-multi-level.opened .nav-open-icon {
+      transform: rotate(180deg); }
+    .menu .menu-list li.menu-item a {
+      display: block;
+      padding: 5px 30px;
+      font-size: 15px;
+      color: #909090;
+      text-decoration: none;
+      border-bottom: 1px solid #0e0e0e; }
+      .menu .menu-list li.menu-item a:hover {
+        background: #0e0e0e; }
+    .menu .menu-list li.menu-item .nav-item-icon {
+      width: 30px;
+      color: #3A3795; }
+    .menu .menu-list li.menu-item .nav-open-icon {
+      float: right;
+      margin-top: 13px;
+      color: #444444; }
   .menu .menu-list > li.menu-item:last-child {
     position: absolute;
     bottom: 0;
@@ -168,6 +181,9 @@ form .date {
     position: absolute;
     right: 15px;
     bottom: 10px; }
+
+form > div.form-section:last-child {
+  border-bottom: 0px; }
 
 form .form-section {
   padding: 50px 0;
