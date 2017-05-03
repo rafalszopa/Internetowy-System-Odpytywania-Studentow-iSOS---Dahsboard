@@ -246,8 +246,38 @@ div {
 
 // Forms
 form {
-    label {
+    // padding: 50px 0;
+
+    .date {
+        position: relative;
+
+        .input-group-addon {
+            position: absolute;
+            right: 15px;
+            bottom: 10px;
+        }
+    }
+
+    .form-section {
+        // margin-bottom: 50px;
+        padding: 50px 0;
+        border-bottom: 1px solid #e4e4e4;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
         font-weight: 500;
+        border-left: 2px solid #4f96ce;
+        padding-left: 15px;
+        line-height: 25px;
+    }
+
+    label {
+        font-size: 15px;
+        color: dimgray;
+        margin-bottom: 15px;
+        font-weight: normal;
     }
     input {
         // display: block;
@@ -258,12 +288,18 @@ form {
     }
 
     .form-group {
-        padding: 30px;
-        border-bottom: 1px solid #e2e2e2;
+        margin-bottom: 0;
+        // padding: 30px;
+        // border-bottom: 1px solid #e2e2e2;
 
         .fa-question-circle {
             color: #c3c3c3;
+            margin-left: 10px;
         }
+    }
+
+    .form-choice.closed {
+        display: none;
     }
 }
 // End of forms

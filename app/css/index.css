@@ -162,17 +162,42 @@ div {
     line-height: 1;
     margin: 0; }
 
+form .date {
+  position: relative; }
+  form .date .input-group-addon {
+    position: absolute;
+    right: 15px;
+    bottom: 10px; }
+
+form .form-section {
+  padding: 50px 0;
+  border-bottom: 1px solid #e4e4e4; }
+
+form h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  border-left: 2px solid #4f96ce;
+  padding-left: 15px;
+  line-height: 25px; }
+
 form label {
-  font-weight: 500; }
+  font-size: 15px;
+  color: dimgray;
+  margin-bottom: 15px;
+  font-weight: normal; }
 
 form .form-control {
   border-radius: 0; }
 
 form .form-group {
-  padding: 30px;
-  border-bottom: 1px solid #e2e2e2; }
+  margin-bottom: 0; }
   form .form-group .fa-question-circle {
-    color: #c3c3c3; }
+    color: #c3c3c3;
+    margin-left: 10px; }
+
+form .form-choice.closed {
+  display: none; }
 
 .footer {
   padding-left: 25px;

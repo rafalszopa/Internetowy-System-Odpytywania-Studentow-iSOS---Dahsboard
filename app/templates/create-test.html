@@ -16,19 +16,22 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-sm-3" for="name">Wprowadź nazwę kursu</label>
-                            <div class="col-sm-8">
+                <form>
+                    <div class="row form-section">
+                        <div class="col-md-12">
+                            <h3>Informacje ogólne</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="name">Wprowadź nazwę kursu</label>
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
                                 <input class="form-control" id="name" type="text">
                             </div>
-                            <div class="col-sm-1">
-                                <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
-                            </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-3" for="course">Wybierz kurs z listy</label>
-                            <div class="col-sm-8">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="course">Wybierz kurs z listy</label>
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
                                 <select class="form-control" id="course">
                                     <option value="">Kurs 1</option>
                                     <option value="">Kurs 2</option>
@@ -37,13 +40,11 @@
                                     <option value="">Kurs 5</option>
                                 </select>
                             </div>
-                            <div class="col-sm-1">
-                                <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
-                            </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-3" for="question">Wybierz pytania z listy</label>
-                            <div class="col-sm-8">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="question">Wybierz pytania z listy</label>
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
                                 <select class="form-control" id="question">
                                     <option value="">Zestaw pytań 1</option>
                                     <option value="">Zestaw pytań 2</option>
@@ -52,12 +53,151 @@
                                     <option value="">Zestaw pytań 5</option>
                                 </select>
                             </div>
-                            <div class="col-sm-1">
-                                <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Pytania</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2" checked="checked">
+                                        Bez podziału na grupy
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        Z podziałem na grupy
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <div class="form-choice">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Wprowadź liczbę pytań</label>
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                    <input class="form-control" id="name" type="number">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Określ ziarno losowości</label>
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                    <input class="form-control" id="name" type="text">
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+
+                    <div class="form-choice closed">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <table class="table">
+                                    <tr>
+                                        <td>Grupa</td>
+                                        <td>Liczba pytań</td>
+                                    </tr>
+                                    <tr>
+                                        <td>I</td>
+                                        <td><input class="form-control" id="name" type="number"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>II</td>
+                                        <td><input class="form-control" id="name" type="number"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>III</td>
+                                        <td><input class="form-control" id="name" type="number"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="row">
+                        <div class="col-md-12">
+                            <h3>Termin i lokalizacja</h3>
+                        </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Określ termin testu</label>
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                            <span class="fa fa-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Określ czas trwania testu</label>
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                    <input class="form-control" id="name" type="number">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name">Określ miejsce testu</label>
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                    <input class="form-control" id="name" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </form>
+            </div>
+
+
+
+                    <!--<form>
+                        <div class="form-group col-md-4">
+                            <label for="name">Wprowadź nazwę kursu</label>
+                            <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
+                            <input class="form-control" id="name" type="text">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="course">Wybierz kurs z listy</label>
+                            <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
+                                <select class="form-control" id="course">
+                                    <option value="">Kurs 1</option>
+                                    <option value="">Kurs 2</option>
+                                    <option value="">Kurs 3</option>
+                                    <option value="">Kurs 4</option>
+                                    <option value="">Kurs 5</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="question">Wybierz pytania z listy</label>
+                            <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
+                                <select class="form-control" id="question">
+                                    <option value="">Zestaw pytań 1</option>
+                                    <option value="">Zestaw pytań 2</option>
+                                    <option value="">Zestaw pytań 3</option>
+                                    <option value="">Zestaw pytań 4</option>
+                                    <option value="">Zestaw pytań 5</option>
+                                </select>
+                        </div>
+
+                        <div class="form-group col-md-12">
                         <div class="radio">
                             <label for="c1"><input id="c1" type="radio"> Bez podziału na grupy</label>
+                        </div>
                         </div>
                         <div class="radio">
                             <label for="c2"><input id="c2" type="radio"> Z podziałem na grupy</label>
@@ -73,8 +213,7 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
-                    </form>
+                    </form>-->
                 </div>
             </div>
         </div>
