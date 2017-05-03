@@ -423,3 +423,24 @@ table {
 .container-fluid {
     max-width: 1100px;
 }
+
+/* Info box */
+.info-box {
+    margin-top: -50px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: white;
+    background: #ff4e4e;
+
+    i {
+        position: absolute;
+        right: 0;
+        bottom: -7px;
+        color: #ffcfcf;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+/* End of Info box */
