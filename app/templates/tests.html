@@ -1,0 +1,244 @@
+{% set title = 'iSOS - Przeglądaj Testy' %}
+{% extends '_layout.html' %}
+{% block content %}
+    <div class="breadcrump">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrump-link">
+                        <a href="#">Strona główna</a> <span>/</span>
+                    </div>
+                    <h1 class="breadcrump-title">Przeglądaj testy</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Filtry</h3>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="filter-background">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <input class="form-control" id="name" type="text" placeholder="Nazwa testu">
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-control" id="question">
+                                        <option value="" disabled selected style="display: none;">Stan testu</option>
+                                        <option value="">Oczekujący</option>
+                                        <option value="">Zrealizowany</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="filter-time-group">
+                                        <span>Od</span><i class="fa fa-calendar"></i>
+                                        <span>Do</span><i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="filter-buttons">
+                                        <a class="btn btn-small btn-info" href="#">Filtruj</a>
+                                        <a href="#">Wyczyść</a>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Lista dostępnych testów</h3>
+            </div>
+            <div class="col-md-12">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lp.</th>
+                            <th>Nazwa testu</th>
+                            <th>Kurs</th>
+                            <th>Zestaw pytań</th>
+                            <th>Data rozpoczęcia</th>
+                            <th>Data utworzenia</th>
+                            <th>Liczna pytań</th>
+                            <th>Stan testu</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a href="#">
+                                    test_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    kurs_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    zestaw_1
+                                </a>
+                            </td>
+                            <td>30.06.2017</td>
+                            <td>30.06.2017</td>
+                            <td>15</td>
+                            <td>Zrealizowany</td>
+                            <td class="icon-group">
+                                <a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a href="#">
+                                    test_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    kurs_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    zestaw_1
+                                </a>
+                            </td>
+                            <td>30.06.2017</td>
+                            <td>30.06.2017</td>
+                            <td>15</td>
+                            <td>Oczekujący</td>
+                            <td class="icon-group">
+                                <a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a href="#">
+                                    test_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    kurs_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    zestaw_1
+                                </a>
+                            </td>
+                            <td>30.06.2017</td>
+                            <td>30.06.2017</td>
+                            <td>15</td>
+                            <td>Oczekujący</td>
+                            <td class="icon-group">
+                                <a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a href="#">
+                                    test_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    kurs_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    zestaw_1
+                                </a>
+                            </td>
+                            <td>30.06.2017</td>
+                            <td>30.06.2017</td>
+                            <td>15</td>
+                            <td>Oczekujący</td>
+                            <td class="icon-group">
+                                <a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a href="#">
+                                    test_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    kurs_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    zestaw_1
+                                </a>
+                            </td>
+                            <td>30.06.2017</td>
+                            <td>30.06.2017</td>
+                            <td>15</td>
+                            <td>Oczekujący</td>
+                            <td class="icon-group">
+                                <a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a href="#">
+                                    test_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    kurs_1
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    zestaw_1
+                                </a>
+                            </td>
+                            <td>30.06.2017</td>
+                            <td>30.06.2017</td>
+                            <td>15</td>
+                            <td>Oczekujący</td>
+                            <td class="icon-group">
+                                <a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

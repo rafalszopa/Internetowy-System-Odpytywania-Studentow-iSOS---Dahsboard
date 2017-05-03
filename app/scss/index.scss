@@ -7,6 +7,15 @@ h1 {
     font-size: 30px;
 }
 
+h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: 500;
+        border-left: 2px solid #4f96ce;
+        padding-left: 15px;
+        line-height: 25px;
+    }
+
 div {
     box-sizing: border-box !important;
 }
@@ -19,7 +28,6 @@ div {
 
         .main {
             margin-left: 250px;
-            padding-bottom: 50px;
         }
         .menu {
             transform: translate(0, 0);
@@ -30,8 +38,37 @@ div {
 .btn {
     padding: 10px 30px;
     display: inline-block;
-    background: #0aca0a;
     color: white;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+
+
+    &:hover, &:active, &:visited {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.btn.btn-small {
+    padding: 7px 15px;
+}
+
+.btn-success {
+    background: #0aca0a;
+
+    &:hover {
+        background: #0aa00a;
+    }
+}
+
+.btn-info {
+    background: #3ebae8;
+
+    &:hover {
+        background: #008dc1;
+    }
 }
 
 .menu {
@@ -129,6 +166,7 @@ div {
 
 .main {
     margin-left: 0;
+    padding-bottom: 50px;
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
@@ -228,6 +266,7 @@ div {
     background: linear-gradient(141deg, #584495 0%, #2cb5e8 75%);
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
 
     &:after {
         content: "";
@@ -263,35 +302,20 @@ div {
 
 // Forms
 form {
-    // padding: 50px 0;
-
-    .date {
-        position: relative;
-
-        .input-group-addon {
+        .fa-calendar {
             position: absolute;
-            right: 15px;
+            right: 25px;
             bottom: 10px;
         }
-    }
 
     & > div.form-section:last-child {
         border-bottom: 0px;
     }
 
     .form-section {
-        // margin-bottom: 50px;
-        padding: 50px 0;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
         border-bottom: 1px solid #e4e4e4;
-    }
-
-    h3 {
-        font-size: 20px;
-        margin-bottom: 30px;
-        font-weight: 500;
-        border-left: 2px solid #4f96ce;
-        padding-left: 15px;
-        line-height: 25px;
     }
 
     label {
@@ -300,18 +324,9 @@ form {
         margin-bottom: 15px;
         font-weight: normal;
     }
-    input {
-        // display: block;
-    }
-
-    .form-control {
-        border-radius: 0;
-    }
 
     .form-group {
         margin-bottom: 0;
-        // padding: 30px;
-        // border-bottom: 1px solid #e2e2e2;
 
         .fa-question-circle {
             color: #c3c3c3;
@@ -323,10 +338,80 @@ form {
         display: none;
     }
 }
+
+.form-control {
+        border-radius: 0;
+    }
 // End of forms
 
 // Data and time picker
 
+// Table
+
+table {
+
+    font-size: 15px;
+    color: dimgray;
+    width: 100%;
+
+    td, th {
+        padding: 15 10px;
+        vertical-align: middle;
+    }
+
+    th {
+        font-weight: 500;
+    }
+
+    thead tr {
+        border-bottom: 2px solid #f1f1f1;
+
+        &:hover {
+            background: none;
+        }
+    }
+
+    tr {
+        border-bottom: 1px solid #f1f1f1;
+
+        &:hover {
+            background: #f1f1f1;
+        }
+    }
+
+    tbody {
+        .icon-group i {
+            color: #ea6d6d;
+        }
+    }
+}
+
+// End of table
+
+/* Filter */
+.filter-background {
+    padding: 15px;
+    background: #f1f1f1;
+    margin-bottom: 50px;
+}
+
+.filter-time-group {
+    padding: 7px 0;
+
+    i {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+}
+
+.filter-buttons {
+    text-align: right;
+
+    .btn {
+        margin-right: 10px;
+    }
+}
+/* End of Filter */
 
 .footer {
     padding-left: 25px;
@@ -338,98 +423,3 @@ form {
 .container-fluid {
     max-width: 1100px;
 }
-
-// .container-fluid, .container {
-//     background: grey;
-
-//     .row {
-//         background: lightgrey;
-
-//         .col-md-12 {
-//             background: lightgreen;
-//         }
-//     }
-// }
-
-// .opened-menu {
-//     #sidebar-menu {
-//         transform: translate(-250px, 0);
-//     }
-
-//     #content {
-//         margin-left: 0px;
-//     }
-// }
-
-// #sidebar-menu {
-    // -webkit-transition: .2s ease-in-out;
-    // -moz-transition: .2s ease-in-out;
-    // -o-transition: .2s ease-in-out;
-    // transition: .2s ease-in-out;
-//     box-shadow: 11px 0px 40px rgba(78, 78, 78, 0.29);
-//     width: 250px;
-//     position: fixed;
-//     padding: 30px;
-//     // background: #f8fbfb;
-//     top: 0;
-//     bottom: 0;
-
-//     h4 {
-//         font-family: 'Maven Pro', sans-serif;
-//     }
-
-//     .logo-img {
-//         margin-bottom: 30px;
-//         img {
-//         width: 50%;
-//     }
-//     }
-
-// }
-
-// #content {
-//     padding: 30px;
-//     margin-left: 250px;
-//     background: #f8fbfb;
-//     -webkit-transition: .2s ease-in-out;
-//     -moz-transition: .2s ease-in-out;
-//     -o-transition: .2s ease-in-out;
-//     transition: .2s ease-in-out;
-// }
-
-// #header {
-//     border-bottom: 1px solid #f1f1f1;
-//     min-height: 60px;
-//     margin-left: 250px;
-//     width: 100%;
-//     -webkit-transition: .2s ease-in-out;
-//     -moz-transition: .2s ease-in-out;
-//     -o-transition: .2s ease-in-out;
-//     transition: .2s ease-in-out;
-// }
-
-    
-
-// ul.nav {
-//     // margin-top: 70px;
-// }
-
-//     .nav > li > a {
-//     position: relative;
-//     display: block;
-//     padding: 15px 15px;
-//     font-family: 'Maven Pro', sans-serif;
-//     color: #8e8e8e;
-//     font-size: 15px;
-//     font-weight: 500;
-// }
-
-// #content {
-
-// }
-
-// #content > .test {
-//     background: white;
-//     padding: 30px;
-//     box-shadow: 0px 0px 12px #dadada;
-// }

@@ -8,5 +8,9 @@ $(document).ready(function() {
         $(this).toggleClass('opened');
 	});
 
-	$('#datetimepicker1').datetimepicker();
+	// $('#datetimepicker1').datetimepicker();
+	$("#timepicker-actions").datetimepicker({
+		timepicker: true,
+		startDate: start
+	});
 });
