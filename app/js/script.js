@@ -9,8 +9,12 @@ $(document).ready(function() {
 	});
 
 	// $('#datetimepicker1').datetimepicker();
-	$("#timepicker-actions").datetimepicker({
-		timepicker: true,
-		startDate: start
+	// $("#timepicker-actions").datetimepicker({
+	// 	timepicker: true,
+	// });
+
+	$(".info-box i").click(function() {
+		console.log("Click");
+		$(".info-box").remove();
 	});
 });
