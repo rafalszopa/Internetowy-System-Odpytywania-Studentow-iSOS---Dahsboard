@@ -21,7 +21,8 @@ div {
   .wrapper.opened-menu .main {
     margin-left: 250px; }
   .wrapper.opened-menu .menu {
-    transform: translate(0, 0); }
+    transform: translate(0, 0);
+    box-shadow: 0px 0px 30px rgba(78, 78, 78, 0.5); }
 
 .btn {
   padding: 10px 30px;
@@ -48,6 +49,18 @@ div {
   .btn-info:hover {
     background: #008dc1; }
 
+.btn-finish-test {
+  display: block;
+  background: #ff4e4e;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
+  .btn-finish-test:hover {
+    background: #dc2929; }
+
 .menu {
   background: #060606;
   line-height: 2.5;
@@ -55,7 +68,6 @@ div {
   width: 250px;
   top: 0;
   bottom: 0;
-  box-shadow: 0px 0px 30px rgba(78, 78, 78, 0.5);
   transform: translate(-250px, 0);
   -webkit-transition: .2s ease-in-out;
   -moz-transition: .2s ease-in-out;
@@ -208,9 +220,6 @@ form .fa-calendar {
   right: 25px;
   bottom: 10px; }
 
-form > div.form-section:last-child {
-  border-bottom: 0px; }
-
 form .form-section {
   padding-bottom: 50px;
   margin-bottom: 50px;
@@ -228,31 +237,88 @@ form .form-group {
     color: #c3c3c3;
     margin-left: 10px; }
 
-form .form-choice.closed {
-  display: none; }
+form .form-choice {
+  margin-top: 30px; }
+  form .form-choice.closed {
+    display: none; }
 
 .form-control {
   border-radius: 0; }
 
-table {
+.table-listing {
   font-size: 15px;
   color: dimgray;
   width: 100%; }
-  table td, table th {
+  .table-listing td, .table-listing th {
     padding: 15 10px;
     vertical-align: middle; }
-  table th {
+  .table-listing th {
     font-weight: 500; }
-  table thead tr {
+  .table-listing thead tr {
     border-bottom: 2px solid #f1f1f1; }
-    table thead tr:hover {
+    .table-listing thead tr:hover {
       background: none; }
-  table tr {
+  .table-listing tr {
     border-bottom: 1px solid #f1f1f1; }
-    table tr:hover {
+    .table-listing tr:hover {
       background: #f1f1f1; }
-  table tbody .icon-group i {
+  .table-listing tbody .icon-group i {
     color: #ea6d6d; }
+
+.menu-header {
+  text-align: center;
+  display: block;
+  font-size: 35px;
+  color: #909090;
+  text-decoration: none; }
+  .menu-header i {
+    width: 30px;
+    color: #3A3795; }
+
+/* Timer */
+.timer {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.6;
+  padding: 30px 0; }
+  .timer .timer-icon {
+    display: block; }
+  .timer .timer-minutes, .timer .timer-seconds {
+    position: relative;
+    display: inline-block;
+    line-height: 1; }
+    .timer .timer-minutes:after, .timer .timer-seconds:after {
+      display: inline;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #424242;
+      position: absolute;
+      bottom: -20px; }
+  .timer .timer-minutes:after {
+    content: "MIN";
+    left: calc(50% - 15px); }
+  .timer .timer-seconds:after {
+    content: "SEK";
+    left: calc(50% - 12px); }
+  .timer .timer-colon {
+    color: #424242;
+    font-weight: normal; }
+
+/* End of timer */
+.questions {
+  padding: 30px; }
+  .questions > span {
+    background: #212121;
+    width: 33px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer; }
 
 /* Filter */
 .filter-background {
@@ -299,3 +365,21 @@ table {
     padding: 10px; }
 
 /* End of Info box */
+/* Test view */
+.test-info {
+  font-size: 15px; }
+
+.table-nav-info {
+  width: 100%;
+  color: white; }
+  .table-nav-info th, .table-nav-info td {
+    padding: 0 30px;
+    line-height: 30px; }
+  .table-nav-info th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #424242; }
+  .table-nav-info td {
+    border-bottom: 1px solid #191919; }
+
+/* End of test view */

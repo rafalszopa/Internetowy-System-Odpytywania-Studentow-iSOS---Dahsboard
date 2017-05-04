@@ -194,7 +194,7 @@
                             <h3>Pytania</h3>
                         </div>
                     </div>
-                    <div class="row" style="margin-bottom: 40px;">
+                    <div class="row" style="margin-bottom: 30px;">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="question">Wybierz zestaw pytań z listy</label>
@@ -226,6 +226,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="form-choice">
                             <div class="col-md-4">
                                 <div class="form-group">
@@ -241,7 +243,7 @@
                                     <input class="form-control" id="name" type="text">
                                 </div>
                             </div>
-                    </div>
+                        </div>
                     </div>
 
                     <div class="form-choice closed">
@@ -270,7 +272,7 @@
                     </div>
                     </div>
 
-                    <div class="form-section" style="border-bottom: none;">
+                    <div class="form-section" style="border-bottom: none; margin-bottom: 0;">
                         <div class="row">
                             <div class="col-md-12">
                                 <h3>Termin i lokalizacja</h3>
@@ -283,17 +285,15 @@
                                     <label for="name">Określ termin testu</label>
                                     <i class="fa fa-question-circle" aria-hidden="true"></i>
                                     
-                                    <input class="form-control datepicker-here" id="timepicker-actions" data-timepicker="true" data-position='top left' data-language='en' type='text' />
+                                    <input class="form-control datepicker-here" id="timepicker-actions" data-timepicker="true" data-position='top left' type='text' />
                                     <span class="fa fa-calendar"></span>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="name">Określ czas trwania testu</label>
+                                    <label for="name">Określ czas trwania testu (w minutach)</label>
                                     <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                    <input style="max-width: 200px; display:inline-block" class="form-control" id="name" type="number">
-                                    <span style="    margin-left: 15px;
-    color: #716565;" >minut</span>
+                                    <input class="form-control" id="name" type="number">
                                 </div>
                             </div>
                             <div class="col-md-4">
