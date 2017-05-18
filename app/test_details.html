@@ -1,0 +1,435 @@
+<!DOCTYPE>
+<!doctype html>
+<html>
+    <head>
+        <title>iSOS - Internetowy System Odpytywania Studentów</title>
+        <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">-->
+        <link rel="stylesheet" href="css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/datepicker.css">
+        <!--<link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />-->
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <div class="wrapper opened-menu">
+            <nav class="menu">
+
+                <div>
+                    <img style="max-height: 30px; margin: 25px; opacity:0.5;" src="../images/logo.png">
+                </div>
+
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#">
+                            <i class="fa fa-home nav-item-icon" aria-hidden="true"></i>
+                            Strona główna
+                        </a>
+                    </li>
+                    <li class="menu-item menu-multi-level">
+                        <a href="#">
+                            <i class="fa fa-file-text nav-item-icon" aria-hidden="true"></i>
+                            <span>Testy</span>
+                            <i class="fa fa-angle-down nav-open-icon" aria-hidden="true"></i>
+                        </a>
+                        <ul class="submenu-list">
+                            <li class="menu-item">
+                                <a href="create-test.html">Utwórz test</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="tests.html">Przeglądaj testy</a>
+                                <span class="badge">6</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-multi-level">
+                        <a href="#">
+                            <i class="fa fa-question nav-item-icon" aria-hidden="true"></i>
+                            <span>Pytania</span>
+                            <i class="fa fa-angle-down nav-open-icon" aria-hidden="true"></i>
+                        </a>
+                        <ul class="submenu-list">
+                            <li class="menu-item">
+                                <a href="#">Utwórz pytanie</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Przeglądaj pytania</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-multi-level">
+                        <a href="#">
+                            <i class="fa fa-graduation-cap nav-item-icon" aria-hidden="true"></i>
+                            <span>Kursy</span>
+                            <i class="fa fa-angle-down nav-open-icon" aria-hidden="true"></i>
+                        </a>
+                        <ul class="submenu-list">
+                            <li class="menu-item">
+                                <a href="#">Utwórz kurs</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Przeglądaj kursy</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-multi-level">
+                        <a href="#">
+                            <i class="fa fa-adjust nav-item-icon" aria-hidden="true"></i>
+                            <span>Reguły oceniania</span>
+                            <i class="fa fa-angle-down nav-open-icon" aria-hidden="true"></i>
+                        </a>
+                        <ul class="submenu-list">
+                            <li class="menu-item">
+                                <a href="#">Utwórz regułę</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Przeglądaj reguły</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <i class="fa fa-line-chart nav-item-icon" aria-hidden="true"></i>
+                            <span>Statystyki</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <i class="fa fa-sign-out nav-item-icon" aria-hidden="true"></i>
+                            <span>Wyloguj się</span>
+                        </a>
+                        <div>
+                            <p>Copyright © Internetowy System Odpytywania Studentów</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="main">
+                <header class="header">
+                    <!--Górna belka-->
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header-righ-box">
+                        <span style="color: #757575; font-size: 15px;">Witaj, <a style="color: #757575" href="">Rafał Szopa</a></span>
+                        <img style="vertical-align: middle; margin-left: 15px; margin-right: 15px;" src="images/ui-photo.jpg">
+                    </div>
+                </header>
+                <div class="content">
+                    <!--Kontent-->
+                    
+    <div class="breadcrump">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrump-link">
+                        <a href="#">Strona główna</a> <span>/</span>
+                    </div>
+                    <h1 class="breadcrump-title">Szczegóły testu</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="tabs" class="tabs no-js">
+                    <div class="tabs-nav">
+                        <a class="tabs-nav__link is-active" href="#">Informacje ogólne</a>
+                        <a class="tabs-nav__link" href="#">Uczestnicy (11)</a>
+                    </div>
+                    <div class="tab is-active">
+                        <div class="tab__content">
+                            <!--<h2>Do rozpoczęcia testu pozostało: 4 dni</h2>-->
+                            <div class="info-box info">
+                                <p><strong>4 dni</strong> do rozpoczęcia testu</p>
+                            </div>
+                            <table class="table-info">
+                                <tr>
+                                    <td>Nazwa</td>
+                                    <td>Test z przediębiorczości</td>
+                                </tr>
+                                <tr>
+                                    <td>Kursu</td>
+                                    <td>Przedsiębiorczość</td>
+                                </tr>
+                                <tr>
+                                    <td>Pytania</td>
+                                    <td>Pytania z przedsiębiorczości</td>
+                                </tr>
+                                <tr>
+                                    <td>Data utworzenia</td>
+                                    <td>20.02.2017</td>
+                                </tr>
+                                <tr>
+                                    <td>Nazwa rozpoczęcia</td>
+                                    <td>20.04.2017</td>
+                                </tr>
+                                <tr>
+                                    <td>Liczba pytań</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>Czas trwania</td>
+                                    <td>30 minut</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="tab__content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Filtry</h3>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="filter-background">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <input class="form-control" id="name" type="text" placeholder="Nazwa zestawu">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input class="form-control" id="name" type="number" placeholder="Liczba pytań">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="filter-time-group">
+                                                    <span>Od</span><i id="timepicker-actions" class="fa fa-calendar" data-timepicker="true"></i>
+                                                    <span>Do</span><i class="fa fa-calendar"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="filter-buttons">
+                                                    <a class="btn btn-small btn-info" href="#">Filtruj</a>
+                                                    <a href="#">Wyczyść</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Lista dostępnych testów</h3>
+                                </div>
+                                <div class="col-md-12">
+                                    <table class="table-listing">
+                                        <thead>
+                                            <tr>
+                                                <th>Lp.</th>
+                                                <th>Imię</th>
+                                                <th>Nazwisko</th>
+                                                <th>Nr indeksu</th>
+                                                <th>Liczba punktów</th>
+                                                <th>Ocena</th>
+                                                <th>Podgląd testu</th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <a href="#">
+                                                        test_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        kurs_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        zestaw_1
+                                                    </a>
+                                                </td>
+                                                <td>30.06.2017</td>
+                                                <td>30.06.2017</td>
+                                                <td>15</td>
+                                                <td>Zrealizowany</td>
+                                                <td class="icon-group">
+                                                    <a href="#">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <a href="#">
+                                                        test_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        kurs_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        zestaw_1
+                                                    </a>
+                                                </td>
+                                                <td>30.06.2017</td>
+                                                <td>30.06.2017</td>
+                                                <td>15</td>
+                                                <td>Oczekujący</td>
+                                                <td class="icon-group">
+                                                    <a href="#">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <a href="#">
+                                                        test_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        kurs_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        zestaw_1
+                                                    </a>
+                                                </td>
+                                                <td>30.06.2017</td>
+                                                <td>30.06.2017</td>
+                                                <td>15</td>
+                                                <td>Oczekujący</td>
+                                                <td class="icon-group">
+                                                    <a href="#">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <a href="#">
+                                                        test_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        kurs_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        zestaw_1
+                                                    </a>
+                                                </td>
+                                                <td>30.06.2017</td>
+                                                <td>30.06.2017</td>
+                                                <td>15</td>
+                                                <td>Oczekujący</td>
+                                                <td class="icon-group">
+                                                    <a href="#">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <a href="#">
+                                                        test_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        kurs_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        zestaw_1
+                                                    </a>
+                                                </td>
+                                                <td>30.06.2017</td>
+                                                <td>30.06.2017</td>
+                                                <td>15</td>
+                                                <td>Oczekujący</td>
+                                                <td class="icon-group">
+                                                    <a href="#">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <a href="#">
+                                                        test_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        kurs_1
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        zestaw_1
+                                                    </a>
+                                                </td>
+                                                <td>30.06.2017</td>
+                                                <td>30.06.2017</td>
+                                                <td>15</td>
+                                                <td>Oczekujący</td>
+                                                <td class="icon-group">
+                                                    <a href="#">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+</div>
+
+                </div>
+                <!--<footer class="footer">
+                    <p>Copyright &copy Internetowy System Odpytywania Studentów</p>
+                </footer>-->
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/datepicker.js"></script>
+        <!--<script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>-->
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/tabs.js"></script>
+        <script>
+            var myTabs = tabs({
+                el: 'tabs',
+                tabNavigationLinks: '.tabs-nav__link',
+                tabContentContainers: '.tab'
+            });
+
+            myTabs.init();
+        </script>
+    </body>
+</html>

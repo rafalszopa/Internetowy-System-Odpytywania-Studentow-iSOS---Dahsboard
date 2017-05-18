@@ -1,6 +1,7 @@
 body {
   font-family: 'Maven Pro', sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 15px; }
 
 h1 {
   font-size: 30px; }
@@ -11,10 +12,14 @@ h3 {
   font-weight: 500;
   border-left: 2px solid #4f96ce;
   padding-left: 15px;
-  line-height: 25px; }
+  line-height: 25px;
+  text-align: left; }
 
 div {
   box-sizing: border-box !important; }
+
+img {
+  max-width: 100%; }
 
 .wrapper {
   min-height: 100vh; }
@@ -76,9 +81,17 @@ div {
   .menu .menu-list li.menu-item {
     position: relative; }
     .menu .menu-list li.menu-item .badge {
+      display: inline-block;
+      padding: 2px 5px;
+      font-size: 12px;
+      /* font-weight: 600; */
       position: absolute;
-      right: 30;
-      font-size: 12px; }
+      right: 30px;
+      bottom: 15px;
+      line-height: 1;
+      color: rgba(255, 255, 255, 0.59);
+      background-color: #484848;
+      border-radius: 20px; }
     .menu .menu-list li.menu-item.menu-multi-level > .submenu-list {
       display: none; }
       .menu .menu-list li.menu-item.menu-multi-level > .submenu-list .menu-item a {
@@ -308,6 +321,51 @@ form .form-choice {
     font-weight: normal; }
 
 /* End of timer */
+.tabs {
+  text-align: center; }
+  .tabs .tabs-nav {
+    display: inline-block;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px; }
+    .tabs .tabs-nav .tabs-nav__link {
+      display: inline-block;
+      padding: 15px 40px;
+      font-weight: 500;
+      color: #6d6d6d;
+      float: left;
+      -webkit-transition: .2s ease-in-out;
+      -moz-transition: .2s ease-in-out;
+      -o-transition: .2s ease-in-out;
+      transition: .2s ease-in-out; }
+      .tabs .tabs-nav .tabs-nav__link:hover, .tabs .tabs-nav .tabs-nav__link.is-active {
+        background: whitesmoke;
+        text-decoration: none;
+        color: #6262a8; }
+  .tabs .tab {
+    display: none; }
+    .tabs .tab.is-active {
+      display: block; }
+
+.pagination {
+  display: block;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  margin: 50px auto 50px auto; }
+  .pagination a {
+    float: left;
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none; }
+    .pagination a:hover {
+      background: #3a3795;
+      color: white; }
+    .pagination a.false {
+      background: #dc2929;
+      color: white; }
+  .pagination:after {
+    display: block;
+    content: "";
+    clear: both; }
+
 .questions {
   padding: 30px; }
   .questions > span {
@@ -355,7 +413,7 @@ form .form-choice {
   padding-bottom: 20px;
   font-size: 15px;
   color: white;
-  background: #ff4e4e; }
+  text-align: left; }
   .info-box i {
     position: absolute;
     right: 0;
@@ -363,11 +421,28 @@ form .form-choice {
     color: #ffcfcf;
     cursor: pointer;
     padding: 10px; }
+  .info-box.alert {
+    background: #ff4e4e; }
+  .info-box.info {
+    background: #45a7d9;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 0; }
 
 /* End of Info box */
 /* Test view */
 .test-info {
   font-size: 15px; }
+
+.table-info {
+  font-size: 15px;
+  color: dimgray;
+  border-spacing: 0px 15px;
+  border-collapse: inherit; }
+  .table-info tr > td:first-child {
+    font-weight: 500; }
+  .table-info tr > td:last-child {
+    padding-left: 50px; }
 
 .table-nav-info {
   width: 100%;

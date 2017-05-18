@@ -139,5 +139,15 @@
         <script type="text/javascript" src="js/datepicker.js"></script>
         <!--<script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>-->
         <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/tabs.js"></script>
+        <script>
+            var myTabs = tabs({
+                el: 'tabs',
+                tabNavigationLinks: '.tabs-nav__link',
+                tabContentContainers: '.tab'
+            });
+
+            myTabs.init();
+        </script>
     </body>
 </html>

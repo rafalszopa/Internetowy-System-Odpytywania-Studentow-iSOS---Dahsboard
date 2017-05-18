@@ -18,3 +18,8 @@ $(document).ready(function() {
 		$(".info-box").remove();
 	});
 });
+
+
+
+
+	
