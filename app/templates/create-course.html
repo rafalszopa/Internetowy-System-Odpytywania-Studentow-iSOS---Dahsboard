@@ -1,0 +1,58 @@
+{% extends '_layout.html' %}
+{% block content %}
+    <div class="breadcrump">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrump-link">
+                        <a href="#">Strona główna</a> <span>/</span>
+                    </div>
+                    <h1 class="breadcrump-title">Utwórz kurs</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="info-box alert">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <p><strong>Błąd.</strong> Kurs o podanej nazwie już istnieje</p>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div style="margin-bottom: 30px;" class="form-group">
+                                <label for="name">Wprowadź nazwę kursu</label>
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                <input class="form-control" id="name" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div style="margin-bottom: 50px;" class="form-group">
+                                <label for="name">Dodaj plik z kursem</label>
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                <input class="form-control file-input" id="name" type="file">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <a class="btn btn-success" href="#">Utwórz kurs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img style="opacity:0.04;transform:rotate(10deg);position:fixed;bottom:100px;right:100px;" src="images/file.png" />
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

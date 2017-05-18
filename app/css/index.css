@@ -228,32 +228,61 @@ img {
     line-height: 1;
     margin: 0; }
 
-form .fa-calendar {
+.form .fa-calendar {
   position: absolute;
   right: 25px;
   bottom: 10px; }
 
-form .form-section {
+.form .form-section {
   padding-bottom: 50px;
   margin-bottom: 50px;
   border-bottom: 1px solid #e4e4e4; }
 
-form label {
+.form label {
   font-size: 15px;
   color: dimgray;
   margin-bottom: 15px;
   font-weight: normal; }
 
-form .form-group {
+.form .form-group {
   margin-bottom: 0; }
-  form .form-group .fa-question-circle {
+  .form .form-group .fa-question-circle {
     color: #c3c3c3;
     margin-left: 10px; }
 
-form .form-choice {
+.form .form-choice {
   margin-top: 30px; }
-  form .form-choice.closed {
+  .form .form-choice.closed {
     display: none; }
+
+.file-input {
+  position: relative;
+  padding-left: 45px; }
+  .file-input::-webkit-file-upload-button {
+    visibility: hidden; }
+  .file-input::before {
+    content: 'Wybierz plik';
+    display: inline-block;
+    background: #cccccc;
+    position: absolute;
+    left: -1;
+    top: -1;
+    color: white;
+    padding: 6.5px 20px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out; }
+  .file-input:hover::before {
+    background: #808080; }
+  .file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); }
 
 .form-control {
   border-radius: 0; }
@@ -277,6 +306,8 @@ form .form-choice {
       background: #f1f1f1; }
   .table-listing tbody .icon-group i {
     color: #ea6d6d; }
+  .table-listing tbody .icon-group.preview i {
+    color: #585858; }
 
 .menu-header {
   text-align: center;

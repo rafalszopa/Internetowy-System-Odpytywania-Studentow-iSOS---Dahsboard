@@ -331,7 +331,7 @@ img {
 
 // Forms
 
-form {
+.form {
         .fa-calendar {
             position: absolute;
             right: 25px;
@@ -372,6 +372,45 @@ form {
     }
     
         
+}
+
+.file-input {
+
+    position: relative;
+    padding-left: 45px;
+
+    &::-webkit-file-upload-button {
+        visibility: hidden;
+    }
+
+    &::before {
+        content: 'Wybierz plik';
+        display: inline-block;
+        background: #cccccc;
+        position: absolute;
+        left: -1;
+        top: -1;
+        color: white;
+        padding: 6.5px 20px;
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 15px;
+        -webkit-transition: .2s ease-in-out;
+        -moz-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+    }
+
+    &:hover::before {
+        background: #808080;
+    }
+
+    &:active::before {
+        background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+    }
 }
 
 .form-control {
@@ -417,6 +456,10 @@ form {
     tbody {
         .icon-group i {
             color: #ea6d6d;
+        }
+
+        .icon-group.preview i {
+            color: #585858;
         }
     }
 }

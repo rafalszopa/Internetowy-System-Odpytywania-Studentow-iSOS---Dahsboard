@@ -132,7 +132,7 @@
                     <div class="breadcrump-link">
                         <a href="#">Strona główna</a> <span>/</span>
                     </div>
-                    <h1 class="breadcrump-title">Kreator testu</h1>
+                    <h1 class="breadcrump-title">Utwórz zestaw pytań</h1>
                 </div>
             </div>
         </div>
@@ -142,7 +142,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <p><strong>Błąd.</strong> Poniższy formularz nie został wypełniony poprawnie</p>
+                <p><strong>Błąd.</strong> Zestaw pytań o podanej nazwie już istnieje</p>
                 <i class="fa fa-times" aria-hidden="true"></i>
             </div>
         </div>
@@ -151,171 +151,34 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <form class="form">
-                    <div class="row form-section">
+            <div class="col-md-6">
+                <div class="form">
+                    <div class="row">
                         <div class="col-md-12">
-                            <h3>Informacje ogólne</h3>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="name">Wprowadź nazwę kursu</label>
+                            <div style="margin-bottom: 30px;" class="form-group">
+                                <label for="name">Wprowadź nazwę zestawu pytań</label>
                                 <i class="fa fa-question-circle" aria-hidden="true"></i>
                                 <input class="form-control" id="name" type="text">
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="course">Wybierz kurs z listy</label>
-                                <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                <select class="form-control" id="course">
-                                    <option value="">Kurs 1</option>
-                                    <option value="">Kurs 2</option>
-                                    <option value="">Kurs 3</option>
-                                    <option value="">Kurs 4</option>
-                                    <option value="">Kurs 5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="question">Reguła oceniania</label>
-                                <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                <select class="form-control" id="question">
-                                    <option value="">Reguła prosta</option>
-                                    <option value="">Reguła bardzo prosta</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-section">
-                    <div class="row">
                         <div class="col-md-12">
-                            <h3>Pytania</h3>
-                        </div>
-                    </div>
-                    <div class="row" style="margin-bottom: 30px;">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="question">Wybierz zestaw pytań z listy</label>
+                            <div style="margin-bottom: 50px;" class="form-group">
+                                <label for="name">Dodaj plik z zestawem pytań</label>
                                 <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                <select class="form-control" id="question">
-                                    <option value="">Zestaw pytań 1</option>
-                                    <option value="">Zestaw pytań 2</option>
-                                    <option value="">Zestaw pytań 3</option>
-                                    <option value="">Zestaw pytań 4</option>
-                                    <option value="">Zestaw pytań 5</option>
-                                </select>
+                                <input class="form-control file-input" id="name" type="file">
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2" checked="checked">
-                                        Bez podziału na grupy
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                        Z podziałem na grupy
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-choice">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="name">Wprowadź liczbę pytań</label>
-                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                    <input class="form-control" id="name" type="number">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="name">Określ ziarno losowości</label>
-                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                    <input class="form-control" id="name" type="text">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-choice closed">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <table class="table">
-                                    <tr>
-                                        <td>Grupa</td>
-                                        <td>Liczba pytań</td>
-                                    </tr>
-                                    <tr>
-                                        <td>I</td>
-                                        <td><input class="form-control" id="name" type="number"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>II</td>
-                                        <td><input class="form-control" id="name" type="number"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>III</td>
-                                        <td><input class="form-control" id="name" type="number"></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="form-section" style="border-bottom: none; margin-bottom: 0;">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3>Termin i lokalizacja</h3>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="name">Określ termin testu</label>
-                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                    
-                                    <input class="form-control datepicker-here" id="timepicker-actions" data-timepicker="true" data-position='top left' type='text' />
-                                    <span class="fa fa-calendar"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="name">Określ czas trwania testu (w minutach)</label>
-                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                    <input class="form-control" id="name" type="number">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="name">Określ miejsce testu</label>
-                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                    <input class="form-control" id="name" type="text">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col-md-12">
-                            <a class="btn btn-success" href="#">Utwórz test</a>
+                            <a class="btn btn-success" href="#">Utwórz zestaw pytań</a>
                         </div>
                     </div>
-                </form>
-            </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <img style="opacity:0.04;transform:rotate(10deg);position:fixed;bottom:100px;right:100px;" src="images/file.png" />
+            </div>
         </div>
+    </div>
     
 
                 </div>
