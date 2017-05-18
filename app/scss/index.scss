@@ -535,7 +535,10 @@ img {
 /* End of timer */
 
 .tabs {
-    text-align: center;
+
+    .tabs-nav-wrapper {
+        text-align: center;
+    }
 
     .tabs-nav {
         display: inline-block;
