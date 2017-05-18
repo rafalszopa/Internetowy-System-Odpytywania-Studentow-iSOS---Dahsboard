@@ -49,6 +49,11 @@ img {
   .btn-success:hover {
     background: #0aa00a; }
 
+.btn-edit {
+  background: #25eab4; }
+  .btn-edit:hover {
+    background: #17bf91; }
+
 .btn-info {
   background: #3ebae8; }
   .btn-info:hover {
@@ -292,8 +297,8 @@ img {
   color: dimgray;
   width: 100%; }
   .table-listing td, .table-listing th {
-    padding: 15 10px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding: 15px 10px; }
   .table-listing th {
     font-weight: 500; }
   .table-listing thead tr {
@@ -352,13 +357,20 @@ img {
     font-weight: normal; }
 
 /* End of timer */
+.group-buttons.right {
+  text-align: right; }
+
+.group-buttons.left {
+  text-align: left; }
+
 .tabs .tabs-nav-wrapper {
   text-align: center; }
 
 .tabs .tabs-nav {
   display: inline-block;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-top: 50px; }
   .tabs .tabs-nav .tabs-nav__link {
     display: inline-block;
     padding: 15px 40px;
